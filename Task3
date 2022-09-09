@@ -1,0 +1,15 @@
+//Написать программу копирования массива
+
+int[] originalarray = { 50, 70, 80, 90, 135 };
+
+Console.WriteLine("The original array is:");
+for (int i = 0; i < originalarray.Length; i++)
+
+{
+    Console.Write($" " + originalarray[i]);
+}
+
+int[] copy = (int[])originalarray.Clone();
+Console.WriteLine();
+Console.WriteLine("The cloned array is: ");
+Console.WriteLine(String.Join(" ", copy));
